@@ -57,7 +57,6 @@ if r.ok:
         payload += RESET
         payload += bytes(forecasts[i],'utf8') + LF*2
 
-
     #Save to printing queue folder
     fp = open('queue/weather.txt','wb')
     fp.write(payload)
